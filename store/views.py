@@ -17,7 +17,7 @@ def contact(request):
     context = {
         'msg': 'Quieres otros productos contactame!'
     }
-
+    
     return render(request, 'store/contact.html', context)
 
 def detail(request, pk):
