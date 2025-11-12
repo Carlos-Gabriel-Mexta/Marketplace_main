@@ -1,10 +1,7 @@
-"# marketplace_main"
-# Django Forms
-
-```python
 from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
+
 
 from .models import Item
 
@@ -55,4 +52,3 @@ class SignupForm(UserCreationForm):
             'class': 'form-control'
         }
     ))
-```
