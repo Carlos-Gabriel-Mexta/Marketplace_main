@@ -58,32 +58,32 @@ class NewItemForm(forms.ModelForm):
         model = Item
         fields = ['category', 'name', 'description', 'price', 'image']
 
-    widgets = {
-        'category': forms.Select(
-            attrs={
-                'class': 'form-select'
-             }
-        ),
-        'name': forms.TextInput(
-            attrs={
-                'class': 'form-select'
-            }
-        ),
-        'description': forms.Textarea(
-            attrs={
-                'class': 'form-select',
-                'style': 'height: 100px'
-            }
-        ),
-        'price': forms.TextInput(
-            attrs={
-                'class': 'form-select'
-            }
-        ),
-        'image': forms.FileInput(
-            attrs={
-                'class': 'form-select'
-            }
-        ),
-        
-    }
+        widgets = {
+            'category': forms.Select(
+                attrs={
+                    'class': 'form-select'
+                }
+            ),
+            'name': forms.TextInput(
+                attrs={
+                    'class': 'form-select'
+                }
+            ),
+            'description': forms.Textarea(
+                attrs={
+                    'class': 'form-select',
+                    'style': 'height: 100px'
+                }
+            ),
+            'price': forms.TextInput(
+                attrs={
+                    'class': 'form-select'
+                }
+            ),
+            'image': forms.FileInput(
+                attrs={
+                    'class': 'form-select'
+                }
+            ),
+            
+        }
